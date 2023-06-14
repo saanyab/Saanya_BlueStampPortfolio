@@ -1,4 +1,4 @@
-# Project Name Here
+# Third Eye For The Blind
 I have developed a device with the potential to assist individuals who are visually impaired. This wearable technology enables blind individuals to navigate more easily by detecting obstacles in close proximity using ultrasonic waves. The device notifies the user through escalating buzzer sounds and vibrations from a motor, which intensify as the user approaches the detected object.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
