@@ -67,11 +67,13 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Micro | Main Program Board | $10.95 | <a href="https://www.amazon.com/SparkFun-Arduino-Mini-328-3-3V-8MHz/dp/B004RF9LB8/ref=sr_1_5?crid=276NUJP5GVPNS&keywords=SparkFun+Arduino+Pro+Mini+328+-+5V%2F16MHz&qid=1686772444&sprefix=%2Caps%2C470&sr=8-5"> Link </a> |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Ultrasonic Sensor | Main Sensor for Detection | $6.99 | <a href="https://www.amazon.com/WWZMDiB-HC-SR04-Ultrasonic-Distance-Measuring/dp/B0B1MJJLJP/ref=sr_1_3 crid=SMA11V06DTND&keywords=ultrasonic+sensor&qid=1686772587&sprefix=ultrasonic+senosr%2Caps%2C144&sr=8-3)"> Link </a> |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Solderless Breadboard | Used to Build Project On | $9.99 | <a href= "https://www.amazon.com/Breadboards-Solderless-Breadboard-Distribution Connecting/dp/B07DL13RZH/ref=sr_1_1_sspa?crid=2G0A3O6U8I453&keywords=solderless+breadboard&qid=1686772774&sprefix=solderles%2Caps%2C155&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+|:--:|:--:|:--:|:--:|
+| Buzzer | Used to Switch Detection from Light to Sound | $6.88 | <a href= "https://www.amazon.com/Gikfun-Active-Magnetic-Continous-Arduino/dp/B01FVZQ6F6/ref=sr_1_2_sspa?crid=31I3JQE4NAJ8J&keywords=buzzer+arduino&qid=1686772919&sprefix=buzzer%2Caps%2C191&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 |:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
