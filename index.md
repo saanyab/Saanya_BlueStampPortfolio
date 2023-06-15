@@ -75,6 +75,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | Buzzer | Used to Switch Detection from Light to Sound | $6.88 | <a href= "https://www.amazon.com/Gikfun-Active-Magnetic-Continous-Arduino/dp/B01FVZQ6F6/ref=sr_1_2_sspa?crid=31I3JQE4NAJ8J&keywords=buzzer+arduino&qid=1686772919&sprefix=buzzer%2Caps%2C191&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 |:--:|:--:|:--:|:--:|
+| Vibrating Motor | Used to Give Physical Alert of Objects | $17.99 | <a href= "https://www.amazon.com/BestTong-Miniature-Vibrating-Vibration-Coreless/dp/B073NGPHDR/ref=sr_1_9?crid=3MKLV0J4PWN9X&keywords=vibrating+motor&qid=1686859468&sprefix=vibrating+moto%2Caps%2C200&sr=8-9"> Link </a> |
+|:--:|:--:|:--:|:--:|
+| Jumper Wires | Used to Connect Components on the Breadboard | $9.99 | <a href= "https://www.amazon.com/MCIGICM-Breadboard-Jumper-Cables-Arduino/dp/B081GMJVPB/ref=sxin_17_pa_sp_search_thematic_sspa?content-id=amzn1.sym.6fd80408-71b6-44da-b059-082bba9089d3%3Aamzn1.sym.6fd80408-71b6-44da-b059-082bba9089d3&crid=3DIRCBWGHOZ6B&cv_ct_cx=jumper+wires&keywords=jumper+wires&pd_rd_i=B081GMJVPB&pd_rd_r=8948dacb-9531-4931-a76b-50be9ca669e2&pd_rd_w=hx8N0&pd_rd_wg=Vfast&pf_rd_p=6fd80408-71b6-44da-b059-082bba9089d3&pf_rd_r=XYNWGFWF0D205PQRWAMW&qid=1686859569&sprefix=jumper+wire%2Caps%2C185&sr=1-2-364cf978-ce2a-480a-9bb0-bdb96faa0f61-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1"> Link </a> |
+|:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
