@@ -48,18 +48,42 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
+const int pingTrigPin = 3; //Trigger connected to PIN 3
+const int pingEchoPin = 2; //Echo connected to PIN 2
+const int buz = 4; //Buzzer connected to PIN 4
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  pinMode(buz, OUTPUT);
+  pinMode(pingTrigPin, OUTPUT);
+  pinMode(pingEchoPin, INPUT);
 }
-
 void loop() {
-  // put your main code here, to run repeatedly:
+  long duration, cm;
 
+  digitalWrite(pingTrigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(pingTrigPin, HIGH);
+  delayMicroseconds(5);
+  digitalWrite(pingTrigPin, LOW);
+
+  duration = pulseIn(pingEchoPin, HIGH);
+  cm = microsecondsToCentimeters(duration);
+  if(cm<=50 && cm>0) {
+    int d= map(cm, 1, 100, 20, 2000);
+    digitalWrite(buz, HIGH);
+    delay(100);
+    digitalWrite(buz, LOW);
+    delay(d);
+  }
+  Serial.print(cm);
+  Serial.print("cm");
+  Serial.println();
+  delay(100);
+ }
+long microsecondsToCentimeters(long microseconds) {
+  return microseconds / 29 / 2;
 }
-```
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
