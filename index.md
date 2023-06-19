@@ -35,7 +35,7 @@ For your second milestone, explain what you've worked on since your previous mil
 ![Milestone Image 1](IMG-4975.jpg)
 I achieved my first milestone by successfully setting up and connecting the ultrasonic sensor and Arduino micro to the breadboard. This setup allowed me to test the functionality of the LED, vibrating sensor, and buzzer, as well as determine the necessary wiring connections. By utilizing jumper cables, I established a connection between the Arduino and the ultrasonic sensor, which was integrated with a switch that toggles between the buzzer and LED aspects of the programmed projection. Subsequently, I developed a code that displays the distance of an object in centimeters on the serial monitor, using the ultrasonic sensor. As the object approaches the sensor, the distance reading decreases, while it increases as the object moves farther away. This functionality relies on the sensor emitting sound waves that travel towards the object, then bounce back to the sensor, which in turn receives an echo. By analyzing the time it takes for the pulse to return, the sensor can accurately calculate the distance between itself and the object.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/fDXG2txeYBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Schematics 
 ![Schematics](schematics.png) 
