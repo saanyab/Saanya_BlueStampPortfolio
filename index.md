@@ -43,6 +43,95 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
+    #include <Wire.h>
+
+    #include "person_sensor.h"
+
+    const int pingTrigPin = 3; // Trigger connected to PIN 3
+    const int pingEchoPin = 2; // Echo connected to PIN 2
+    const int pingLEDPin = 2;
+    const int buz = 4; // Buzzer connected to PIN 4
+    const int32_t SAMPLE_DELAY_MS = 200; // Represents the delay between sensor readings
+
+    void setup() {
+      Wire.begin(); // Initialize the I2C bus for the person sensor
+      Serial.begin(9600);
+      pinMode(buz, OUTPUT);
+      pinMode(pingTrigPin, OUTPUT);
+      pinMode(pingEchoPin, INPUT);
+    }
+
+    void loop() {
+      person_sensor_results_t results = {}; // Declare variable 'results' and initialize it with an     empty value
+      if (!person_sensor_read(&results)) {
+        Serial.println("No person sensor results found on the I2C bus"); // If reading fails, print     error message
+        delay(SAMPLE_DELAY_MS);
+        return; // Wait for the delay before returning
+      }
+
+      long duration, cm;
+
+      digitalWrite(pingTrigPin, LOW);
+      delayMicroseconds(2);
+      digitalWrite(pingTrigPin, HIGH);
+      delayMicroseconds(5);
+      digitalWrite(pingTrigPin, LOW);
+
+      duration = pulseIn(pingEchoPin, HIGH);
+      cm = microsecondsToCentimeters(duration);
+  
+      if (cm <= 50 && cm > 0) {
+        int d = map(cm, 1, 100, 20, 2000);
+        digitalWrite(buz, HIGH);
+        delay(100);
+        digitalWrite(buz, LOW);
+        delay(d);
+        d = map(cm, 1, 100, 20, 2000);
+        digitalWrite(pingLEDPin, HIGH); 
+        delay(100);
+        digitalWrite(pingLEDPin, LOW); 
+        delay(d);
+      }
+  
+      Serial.print(cm);
+      Serial.print("cm");
+      Serial.println();
+      delay(100);
+
+      Serial.println("********");
+      Serial.print(results.num_faces);
+      Serial.println(" faces found");
+  
+      for (int i = 0; i < results.num_faces; ++i) {
+        const person_sensor_face_t* face = &results.faces[i];
+        Serial.print("Face #");
+        Serial.print(i);
+        Serial.print(": ");
+        Serial.print(face->box_confidence);
+        Serial.print(" confidence, (");
+        Serial.print(face->box_left);
+        Serial.print(", ");
+        Serial.print(face->box_top);
+        Serial.print("), (");
+        Serial.print(face->box_right);
+        Serial.print(", ");
+        Serial.print(face->box_bottom);
+        Serial.print("), ");
+    
+        if (face->is_facing) {
+          Serial.println("facing");
+        } else {
+          Serial.println("not facing");
+        }
+      }
+  
+      delay(SAMPLE_DELAY_MS);
+    }
+
+    long microsecondsToCentimeters(long microseconds) {
+      return microseconds / 29 / 2;
+    }
+
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
