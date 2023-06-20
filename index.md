@@ -32,7 +32,7 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 <iframe width="560" height="315" src="https://youtu.be/fDXG2txeYBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Schematics 
-![Schematics](schematics.png) 
+![Schematics](schematics.png)
  
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
