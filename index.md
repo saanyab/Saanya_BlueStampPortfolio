@@ -33,7 +33,7 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 
 # Schematics 
 ![Schematics](schematics.png) 
-
+ 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
