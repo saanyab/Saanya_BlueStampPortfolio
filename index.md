@@ -36,7 +36,6 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 ![Schematics](schematics.png)
  
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
     #include <Wire.h>
 
@@ -128,8 +127,6 @@ Here's where you'll put your code. The syntax below places it into a block of co
     }
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 | :--- | :---: | :--: | ---: |
@@ -160,6 +157,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Soldering Iron | Used to Solder Everything to the Breadboard | $16.99 | <a href= "https://www.amazon.com/Soldering-Kit-Temperature-Desoldering-Electronics/dp/B07GTGGLXN/"> Link </a> |
 | :--- | :---: | :--: | ---: |
 | Hot Glue Gun & Hot Glue Sticks | Used to Attach Things Together | $27.49 | <a href= "https://www.amazon.com/Gorilla-8401509-Hot-Glue-Sticks/dp/B088HF5ZQ1/"> Link </a> |
+| :--- | :---: | :--: | ---: |
+| Person Sensor | Senses Whether the Object is A Person or Not | $9.95 | <a href= "https://www.sparkfun.com/products/21231"> Link </a> |
+| :--- | :---: | :--: | ---: |
+| Cable Kit | Connects Person Sensor to Arduino | $9.99 | <a href= "https://www.amazon.com/elechawk-SparkFun-Development-Breadboard-Connector/dp/B08HQ1VSVL/ref=sr_1_1_sspa?crid=2AR9P95DHHEWH&keywords=SparkFun+Qwiic+Cable+Kit&qid=1687374396&sprefix=%2Caps%2C605&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
 
 # Other Resources/Examples
 - [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
