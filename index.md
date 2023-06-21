@@ -162,5 +162,5 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Other Resources/Examples
 - [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
+- [General Project Guide](https://www.hackster.io/muhammedazhar/third-eye-for-the-blind-8c246d)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
