@@ -34,6 +34,7 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 
 # Schematics 
 ![Schematics](Schematics.png)
+![Hat Diagram](hat_diagram.png)
  
 # Code
 
