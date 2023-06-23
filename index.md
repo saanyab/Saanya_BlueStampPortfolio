@@ -10,7 +10,7 @@ I have developed a device with the potential to assist individuals who are visua
 ![Headstone Image](logo.svg)
   
 # Final Milestone
-For your final milestone, explain the outcome of your project. Key details to include are:
+<!--For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
@@ -18,7 +18,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 # Second Milestone
 I successfully achieved my second milestone by integrating a person sensor onto the solderless breadboard and executing the program without encountering any errors. By incorporating this feature, my aim was to enhance the awareness of visually impaired individuals regarding their surroundings, enabling them to gain a comprehensive understanding of the objects in their path. The process of wiring proved to be unexpectedly challenging, demanding considerable troubleshooting efforts to ensure precise connections. Overcoming obstacles encountered during my initial milestone, such as a malfunctioning LED and numerous code errors, I have resolved all the issues, resulting in a fully functional system. I have also been able to organize my wiring in a way where it is color coded and is neater. Looking ahead, my objective involves transferring the project to be soldered on a perfboard to reach completion.
