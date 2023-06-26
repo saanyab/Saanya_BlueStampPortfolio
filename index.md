@@ -20,10 +20,12 @@ I have developed a device with the potential to assist individuals who are visua
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
+
 # Second Milestone
 I successfully achieved my second milestone by integrating a person sensor onto the solderless breadboard and executing the program without encountering any errors. By incorporating this feature, my aim was to enhance the awareness of visually impaired individuals regarding their surroundings, enabling them to gain a comprehensive understanding of the objects in their path. The process of wiring proved to be unexpectedly challenging, demanding considerable troubleshooting efforts to ensure precise connections. Overcoming obstacles encountered during my initial milestone, such as a malfunctioning LED and numerous code errors, I have resolved all the issues, resulting in a fully functional system. I have also been able to organize my wiring in a way where it is color coded and is neater. Looking ahead, my objective involves transferring the project to be soldered on a perfboard to reach completion.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 # First Milestone
 ![Milestone Image 1](IMG-4975.jpg)
@@ -32,11 +34,13 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 
 <iframe width="560" height="315" src="https://youtu.be/Kgv0trJzpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
 # Schematics 
 ![Schematics](Schematics.png)
 Sketch by Author Through Tinkercad
 <!--![Hat Diagram](hat_diagram.png)
 Sketch by Author on Paper -->
+
 
  
 # Code
@@ -130,6 +134,7 @@ Sketch by Author on Paper -->
       return microseconds / 29 / 2;
     }
 
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
@@ -165,6 +170,7 @@ Sketch by Author on Paper -->
 | :--- | :---: | :--: | ---: |
 | 5mm Red LED | Used for Output of Program | $5.99 | <a href="https://www.amazon.com/Diffused-Lighting-Electronics-Components-Emitting/dp/B01C3ZZT0A/"> Link </a> |
 | :--- | :---: | :--: | ---: |
+
 
 # Other Resources/Examples
 - [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
