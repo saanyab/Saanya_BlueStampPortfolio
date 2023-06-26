@@ -35,8 +35,8 @@ I achieved my first milestone by successfully setting up and connecting the ultr
 # Schematics 
 ![Schematics](Schematics.png)
 Sketch by Author Through Tinkercad
-![Hat Diagram](hat_diagram.png)
-Sketch by Author on Paper
+<!--![Hat Diagram](hat_diagram.png)
+Sketch by Author on Paper -->
 
  
 # Code
