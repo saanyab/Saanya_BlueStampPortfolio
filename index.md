@@ -37,7 +37,7 @@ My first milestone was attained by successfully setting up and connecting the ul
 
 
 # Schematics 
-![Schematics](Schematics.png)
+![Schematics](updated_schematics.png)
 Sketch by Author Through Tinkercad
 <!--![Hat Diagram](hat_diagram.png)
 Sketch by Author on Paper -->
