@@ -46,90 +46,73 @@ Sketch by Author on Paper -->
  
 # Code
 
-    #include <Wire.h>
-
-    #include "person_sensor.h"
-
-    const int pingTrigPin = 3; // Trigger connected to PIN 3
-    const int pingEchoPin = 2; // Echo connected to PIN 2
-    const int pingLEDPin = 2;
-    const int buz = 4; // Buzzer connected to PIN 4
+    const int pingTrigPin = 23; // Trigger connected to PIN 3
+    const int pingEchoPin = 22; // Echo connected to PIN 2
+    const int buz = 4;
+    const int motor = 5; //second vibration motor connected to PIN 5
     const int32_t SAMPLE_DELAY_MS = 200; // Represents the delay between sensor readings
+    const int switch1 = 2;
+    const int switch2 = 3;
 
     void setup() {
-      Wire.begin(); // Initialize the I2C bus for the person sensor
       Serial.begin(9600);
-      pinMode(buz, OUTPUT);
       pinMode(pingTrigPin, OUTPUT);
       pinMode(pingEchoPin, INPUT);
+      pinMode(buz, OUTPUT);
+      pinMode(switch1, INPUT_PULLUP);
+      pinMode(switch2, INPUT_PULLUP);
+      pinMode(motor, OUTPUT);
     }
 
     void loop() {
-      person_sensor_results_t results = {}; // Declare variable 'results' and initialize it with an     empty value
-      if (!person_sensor_read(&results)) {
-        Serial.println("No person sensor results found on the I2C bus"); // If reading fails, print     error message
-        delay(SAMPLE_DELAY_MS);
-        return; // Wait for the delay before returning
-      }
-
       long duration, cm;
 
       digitalWrite(pingTrigPin, LOW);
       delayMicroseconds(2);
       digitalWrite(pingTrigPin, HIGH);
       delayMicroseconds(5);
-      digitalWrite(pingTrigPin, LOW);
+      digitalWrite(pingTrigPin, LOW); 
 
       duration = pulseIn(pingEchoPin, HIGH);
       cm = microsecondsToCentimeters(duration);
-  
-      if (cm <= 50 && cm > 0) {
-        int d = map(cm, 1, 100, 20, 2000);
+      if(cm<=50 && cm>0) {
+        int d= map(cm, 1, 100, 20, 2000);
         digitalWrite(buz, HIGH);
         delay(100);
         digitalWrite(buz, LOW);
-        delay(d);
-        d = map(cm, 1, 100, 20, 2000);
-        digitalWrite(pingLEDPin, HIGH); 
-        delay(100);
-        digitalWrite(pingLEDPin, LOW); 
         delay(d);
       }
   
       Serial.print(cm);
       Serial.print("cm");
-      Serial.println();
+      Serial.println("********");
       delay(100);
 
-      Serial.println("********");
-      Serial.print(results.num_faces);
-      Serial.println(" faces found");
-  
-      for (int i = 0; i < results.num_faces; ++i) {
-        const person_sensor_face_t* face = &results.faces[i];
-        Serial.print("Face #");
-        Serial.print(i);
-        Serial.print(": ");
-        Serial.print(face->box_confidence);
-        Serial.print(" confidence, (");
-        Serial.print(face->box_left);
-        Serial.print(", ");
-        Serial.print(face->box_top);
-        Serial.print("), (");
-        Serial.print(face->box_right);
-        Serial.print(", ");
-        Serial.print(face->box_bottom);
-        Serial.print("), ");
     
-        if (face->is_facing) {
-          Serial.println("facing");
-        } else {
-          Serial.println("not facing");
-        }
-      }
+      if (digitalRead(switch1) == 0) {   //if person found, then special vibration pattern with second motor
+        digitalWrite(motor, HIGH);
+        delay(500);
+        digitalWrite(motor, LOW);
+        delay(100);
+        digitalWrite(motor, HIGH);
+        delay(500);
+        digitalWrite(motor, LOW);
+        delay(100);
+        digitalWrite(motor, HIGH);
+        delay(500);
+        digitalWrite(motor, LOW);
+        delay(100);
+      } else if (digitalRead(switch2) == 0) {
+          digitalWrite(motor, HIGH);
+          delay(100);
+          digitalWrite(motor, LOW);
+          delay(500); }
+          else {
+            digitalWrite(motor, LOW);
+          }
   
       delay(SAMPLE_DELAY_MS);
-    }
+      }
 
     long microsecondsToCentimeters(long microseconds) {
       return microseconds / 29 / 2;
