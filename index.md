@@ -23,7 +23,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-![Milestone Image 2](IMG_5157.heic)
 I successfully achieved my second milestone by adding another vibrating motor that runs two different programs based on whether someone is facing the person or not. This development was necessary because the original person sensor I received turned out to be faulty. However, I adapted to this issue and found a solution that still allows me to demonstrate what I intended to do. With this new functionality, they can now gain a comprehensive understanding of the objects in their path. The process of wiring the additional vibrating motor proved to be unexpectedly challenging, requiring considerable troubleshooting efforts to ensure precise connections. However, I persevered and overcame the obstacles I faced during my initial milestone, which included a malfunctioning LED and numerous code errors. By resolving these issues, I have achieved a fully functional system.
 To improve the overall organization of the project, I have implemented a color-coded wiring system that makes it easier to understand and maintain. This step has resulted in a neater and more efficient setup. Looking ahead, my objective is to transfer the project onto a perfboard and solder the components to reach its final completion. This step will ensure a more permanent and robust construction, bringing the project closer to its ultimate goal of assisting visually impaired individuals in navigating their surroundings effectively.
 
