@@ -46,6 +46,7 @@ Sketch by Author on Paper -->
  
 # Code
 
+```c++
     const int pingTrigPin = 23; // Trigger connected to PIN 3
     const int pingEchoPin = 22; // Echo connected to PIN 2
     const int buz = 4;
