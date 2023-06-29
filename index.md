@@ -79,13 +79,13 @@ Sketch by Author Through Tinkercad
 # Code
 
 ```c++
-        const int pingTrigPin = 23; // Trigger connected to PIN 3
-        const int pingEchoPin = 22; // Echo connected to PIN 2
-        const int buz = 4;
-        const int motor = 5; //second vibration motor connected to PIN 5
-        const int32_t SAMPLE_DELAY_MS = 200; // Represents the delay between sensor readings
-        const int switch1 = 2;
-        const int switch2 = 3;
+    const int pingTrigPin = 23; // Trigger connected to PIN 3
+    const int pingEchoPin = 22; // Echo connected to PIN 2
+    const int buz = 4;
+    const int motor = 5; //second vibration motor connected to PIN 5
+    const int32_t SAMPLE_DELAY_MS = 200; // Represents the delay between sensor readings
+    const int switch1 = 2;
+    const int switch2 = 3;
 
     void setup() {
       Serial.begin(9600);
@@ -149,4 +149,4 @@ Sketch by Author Through Tinkercad
 
     long microsecondsToCentimeters(long microseconds) {
       return microseconds / 29 / 2;
- }
+ } '''
