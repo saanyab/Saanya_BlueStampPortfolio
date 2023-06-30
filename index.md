@@ -7,21 +7,21 @@ I have developed a device with the potential to assist individuals who are visua
 
 ![Headstone Image](main_bluestamp_pic.png)
   
-# Final Milestone
+**# Final Milestone**
 ![Milestone Image 3](milestone3_image.png)
-I have ultimately accomplished my final milestone by inserting the device onto the hat and soldered the wires and the arduino onto the perfboard to make it wearable and moveable. This was the final development of my project and I am nowfinished with the project. With this new functionality, the device is now transportable and is a functional, hands-free device that can assist the visually impaired. The process of soldering turned out to. be suprisingly difficult and I spent at least 3 hours working on soldering all the wires and making sure they were all located in the right place. However, I pushed through and finsihed up the final touches to the project. To improve the overall organization of the project, I taped the wires that connect to the same port together to help organize everything and keep it neat. This action led to a cleaner and more effective arrangement. Moving forward, I hope to receive a proper people sensor and I can continue to build on this porject after finishing this program. Overall, this program was a really great introduction to mechanical and bio engineering for me and I hope that moving forward, I will be able to expand on this project I have built and continue to develop devices to help more people.
+I have ultimately accomplished my final milestone by inserting the device onto the hat and soldered the wires and the arduino onto the perfboard to make it wearable and moveable. This was the final development of my project and I am now finished with the project. With this new functionality, the device is now transportable and is a functional, hands-free device that can assist the visually impaired. The process of soldering turned out to. be suprisingly difficult and I spent at least 3 hours working on soldering all the wires and making sure they were all located in the right place. However, I pushed through and finsihed up the final touches to the project. To improve the overall organization of the project, I taped the wires that connect to the same port together to help organize everything and keep it neat. This action led to a cleaner and more effective arrangement. Moving forward, I hope to receive a proper people sensor and I can continue to build on this porject after finishing this program. Overall, this program was a really great introduction to mechanical and bio engineering for me and I hope that moving forward, I will be able to expand on this project I have built and continue to develop devices to help more people.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iiTIupxbPuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-# Second Milestone
+**# Second Milestone**
 ![Milestone Image 2](milestone2_image.png)
 I successfully achieved my second milestone by adding another vibrating motor that runs two different programs based on whether someone is facing the person or not. This development was necessary because the original person sensor I received turned out to be faulty. However, I adapted to this issue and found a solution that still allows me to demonstrate what I intended to do. With this new functionality, they can now gain a comprehensive understanding of the objects in their path. The process of wiring the additional vibrating motor proved to be unexpectedly challenging, requiring considerable troubleshooting efforts to ensure precise connections. However, I persevered and overcame the obstacles I faced during my initial milestone, which included a malfunctioning LED and numerous code errors. By resolving these issues, I have achieved a fully functional system.
 To improve the overall organization of the project, I have implemented a color-coded wiring system that makes it easier to understand and maintain. This step has resulted in a neater and more efficient setup. Looking ahead, my objective is to transfer the project onto a perfboard and solder the components to reach its final completion. This step will ensure a more permanent and robust construction, bringing the project closer to its ultimate goal of assisting visually impaired individuals in navigating their surroundings effectively.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pZ51YU7iu60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# First Milestone
+**# First Milestone**
 ![Milestone Image 1](IMG-4975.jpg)
 
 My first milestone was attained by successfully setting up and connecting the ultrasonic sensor and Arduino Micro to the breadboard. This setup allowed me to test the functionality of the LED, vibrating motor, and buzzer, as well as determine the necessary wiring connections. By utilizing jumper cables, I established a connection between the Arduino and the ultrasonic sensor. I included a switch that toggles between the buzzer and vibrating motor aspects of the programmed projection. Subsequently, I developed a code that displays the distance of an object in centimeters on the serial monitor using the ultrasonic sensor. As the object approaches the sensor, the distance reading decreases, while it increases as the object moves farther away. This functionality relies on the sensor emitting sound waves that travel towards the object, then bounce back to the sensor, which in turn receives an echo. By analyzing the time it takes for the pulse to return, the sensor can accurately calculate the distance between itself and the object. I was waiting on a few parts to get delivered so the wiring was originally a bit rushed, but I am now confident it will work.
@@ -29,11 +29,11 @@ My first milestone was attained by successfully setting up and connecting the ul
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Kgv0trJzpp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-# Schematics 
+**# Schematics **
 ![Schematics](updated_schematics.png)
 Sketch by Author Through Tinkercad
 
-# Bill of Materials
+**# Bill of Materials**
 
 | **Part** | **Note** | **Price** | **Link** |
 | :--- | :---: | :--: | ---: |
@@ -70,7 +70,7 @@ Sketch by Author Through Tinkercad
 | :--- | :---: | :--: | ---: |
 
  
-# Code
+**# Code**
 
 ```c++
     const int pingTrigPin = 23; // Trigger connected to PIN 3
@@ -146,6 +146,6 @@ Sketch by Author Through Tinkercad
  }
 ```
 
-# Other Resources/Examples
+**# Other Resources/Examples**
 - [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
 - [General Project Guide](https://www.hackster.io/muhammedazhar/third-eye-for-the-blind-8c246d)
