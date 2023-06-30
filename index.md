@@ -7,7 +7,7 @@ I have developed a device with the potential to assist individuals who are visua
 
 <!-- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
-![Headstone Image](logo.svg)
+![Headstone Image](main_bluestamp_pic.png)
   
 # Final Milestone
 ![Milestone Image 3](milestone3_image.png)
