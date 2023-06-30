@@ -69,11 +69,6 @@ Sketch by Author Through Tinkercad
 | 5mm Red LED | Used for Output of Program | $5.99 | <a href="https://www.amazon.com/Diffused-Lighting-Electronics-Components-Emitting/dp/B01C3ZZT0A/"> Link </a> |
 | :--- | :---: | :--: | ---: |
 
-
-# Other Resources/Examples
-- [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
-- [General Project Guide](https://www.hackster.io/muhammedazhar/third-eye-for-the-blind-8c246d)
-
  
 # Code
 
@@ -150,3 +145,7 @@ Sketch by Author Through Tinkercad
       return microseconds / 29 / 2;
  }
 ```
+
+# Other Resources/Examples
+- [Example Code for the Person Sensor](https://github.com/usefulsensors/person_sensor_arduino/blob/main/person_sensor_arduino.ino)
+- [General Project Guide](https://www.hackster.io/muhammedazhar/third-eye-for-the-blind-8c246d)
